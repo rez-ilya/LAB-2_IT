@@ -2,18 +2,18 @@
 using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
-    int N;
-    cout << "¬ведите число N (N >= 3): ";
-    cin >> N;
-    while (N < 3) {
-        cout << "ќшибка: N должно быть больше или равно 3." << endl;
-        cout << "¬ведите число N (N >= 3): ";
-        cin >> N;
+    int Q;
+    cout << "¬ведите число Q (Q >= 3): ";
+    cin >> Q;
+    while (Q < 3) {
+        cout << "ќшибка: Q должно быть больше или равно 3." << endl;
+        cout << "¬ведите число Q (Q >= 3): ";
+        cin >> Q;
     }
     // ƒинамическое выделение пам€ти дл€ массива Z
-    int* Z = new int[N];
+    int* Z = new int[Q];
     cout << "«адайте массив Z: " << endl;
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < Q; i++) {
         cout << "¬ведите число *(Z + " << i << ") : ";
         cin >> *(Z + i); // ¬водим элементы с помощью указателей
     }
@@ -21,10 +21,10 @@ int main() {
     int max_length = 0;
     int start_index = 0;
     int common_step = 0;
-    for (int i = 0; i < N - 2; i++) {
+    for (int i = 0; i < Q - 2; i++) {
         int current_step = *(Z + i) - *(Z + i + 1);  // –азность между текущим и следующим элементом(шаг последовательности)
             int current_length = 2;
-        for (int j = i + 1; j < N - 1; j++) { //ƒл€ каждого Z[i] (старт возможной последовательности) провер€ю сущ-ет ли послед-ть
+        for (int j = i + 1; j < Q - 1; j++) { //ƒл€ каждого Z[i] (старт возможной последовательности) провер€ю сущ-ет ли послед-ть
             if (*(Z + j) - *(Z + j + 1) == current_step) {
                 current_length++;
             }
