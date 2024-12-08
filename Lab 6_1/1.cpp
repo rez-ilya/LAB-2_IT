@@ -6,7 +6,7 @@ int main() {
     unsigned short a, b;
     cout << "Введите целые числа a и b: ";
     cin >> a >> b;
-    unsigned short* pa, * pb; //Инициализируем указатели  
+    unsigned short* pa, * pb; //Инициализируем указатели  Ponamarev Daniil
     pa = &a; pb = &b; //"Направляем" указатели на переменные Reznov Ilya
     cout << "pa = " << pa << " *pa = " << *pa << endl;
     cout << "pb = " << pb << " *pb = " << *pb << endl;
