@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main() {
+int five() {
     setlocale(LC_ALL, "Russian");
     int n, k;
     cout << "¬ведите длину массива (n): ";
