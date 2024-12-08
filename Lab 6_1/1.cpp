@@ -6,8 +6,8 @@ int main() {
     unsigned short a, b;
     cout << "Введите целые числа a и b: ";
     cin >> a >> b;
-    unsigned short* pa, * pb; //Инициализируем указатели  Ponamarev Daniil
-    pa = &a; pb = &b; //"Направляем" указатели на переменные Reznov Ilya
+    unsigned short* pa, * pb; //Инициализируем указатели
+    pa = &a; pb = &b; //"Направляем" указатели на переменные Reznov Ilya V.
     cout << "pa = " << pa << " *pa = " << *pa << endl;
     cout << "pb = " << pb << " *pb = " << *pb << endl;
     if (*pa > *pb) *pa *= 2; else *pb *= 2; //Увеличиваем значение максимальной переменной в 2 раза
